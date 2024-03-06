@@ -1,0 +1,108 @@
+@font-face {
+    font-family:title2 ;
+    src: url(Chopin-Light.ttf);
+}
+@font-face{
+    font-family: title1;
+    src: url(cafe.ttf);
+}
+@font-face{
+    font-family: label;
+    src: url(CaviarDreams_Bold.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height:100vh ;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+.input-box label{
+    font-family:label ;
+}
+
+.container{
+    width:60%;
+    height: 80%;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+}
+.container .title1 {
+    font-size:20px ;
+    font-weight: 1000;
+    font-family: title1;
+    
+
+}
+.container .title2{
+    font-size: 20px;
+    padding-top: 2%;  
+    font-family:title2;
+    font-weight: 100;
+}
+.container .title{
+    text-align: center;
+    margin: 15px;
+    
+    
+} 
+
+ form {
+    font-size:16px ;
+    padding: 20px;
+    margin: 0 10px;
+    position: relative;
+    top: 0%;
+    display: grid; 
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:"name last-name"
+    "name last-name"
+    "email email"
+    "phone phone"
+    "password password"
+    "confirm confirm" 
+    "button button";
+}
+.name{grid-area: name;
+    margin-right: 30px;
+
+}
+.email{
+    grid-area:email ;
+}
+.phone{
+    grid-area:phone ;
+}
+.password{
+    grid-area:password ;
+}
+.last-name{
+    grid-area: last-name;
+}
+.confirm{
+    grid-area:confirm ;
+}
+.button{
+    grid-area:button ;
+    margin-top: 12px;
+    
+    
+    
+
+}
+.input-box{
+    display: flex;
+    flex-direction: column; 
+}
+input{
+    border-radius: 8px;
+    height: 35px;
+}
+.button input{
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+    height: 50px;
+}
